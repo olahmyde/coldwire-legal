@@ -1,0 +1,23 @@
+title: ColdWire
+description: Legal pages for ColdWire — a cyber-heist mobile strategy game.
+url: "https://olahmyde.github.io"
+baseurl: "/coldwire-legal"
+lang: en
+
+# GitHub Pages — keep plugins to the safe defaults
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
