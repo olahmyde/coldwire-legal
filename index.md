@@ -37,7 +37,9 @@ For as long as your account exists. Inactive accounts may be removed after an ex
 
 ## Account deletion
 
-You can delete your account and all associated game data by contacting [support@icwebpro.net](mailto:support@icwebpro.net) (or the app's listed support channel) with your handle. Deletion removes your player record, wallet, progress, subnet, raid history, and crew membership. (An in-app deletion flow is planned; both store policies are satisfied by this contact path in the interim.)
+You can delete your account and all associated game data at any time. Deletion removes your player record, wallet, progress, subnet, raid history, and crew membership.
+
+Use the **Request deletion** button at the bottom of this page to open a secure request form (opens your email client to [support@icwebpro.net](mailto:support@icwebpro.net) with your handle pre-filled). You can also email us directly with your agent handle. Requests are processed manually; we will confirm once your data is wiped.
 
 ## Children
 

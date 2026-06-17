@@ -1,0 +1,93 @@
+<section class="delete-strip" aria-labelledby="delete-strip-title">
+  <div class="delete-strip-inner">
+    <div class="delete-strip-copy">
+      <p class="delete-strip-label">Account control</p>
+      <h2 id="delete-strip-title" class="delete-strip-title">Delete your ColdWire account</h2>
+      <p class="delete-strip-desc">
+        Permanently wipe your agent, progress, subnet, raid history, and crew membership.
+        This cannot be undone.
+      </p>
+    </div>
+    <button type="button" class="btn-delete" id="open-delete-modal" aria-haspopup="dialog">
+      Request deletion
+    </button>
+  </div>
+</section>
+
+<div class="modal-backdrop" id="delete-modal-backdrop" hidden aria-hidden="true"></div>
+
+<div
+  class="modal"
+  id="delete-modal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="delete-modal-title"
+  aria-describedby="delete-modal-desc"
+  hidden
+>
+  <div class="modal-panel">
+    <header class="modal-header">
+      <p class="modal-tag">Destructive action</p>
+      <h2 id="delete-modal-title" class="modal-title">Confirm account deletion</h2>
+      <p id="delete-modal-desc" class="modal-desc">
+        Submit a deletion request. We will verify your handle and remove all associated
+        data within a reasonable period. You will lose access immediately once processed.
+      </p>
+    </header>
+
+    <div class="modal-wipe" aria-label="Data removed on deletion">
+      <p class="modal-wipe-label">Will be erased</p>
+      <ul class="modal-wipe-list">
+        <li>Player profile and handle</li>
+        <li>Wallet, credits, and upgrades</li>
+        <li>Subnet layout and defense programs</li>
+        <li>Raid history and replays</li>
+        <li>Crew membership and messages</li>
+        <li>Daily streaks and contract progress</li>
+      </ul>
+    </div>
+
+    <form class="delete-form" id="delete-form" novalidate>
+      <label class="field" for="delete-handle">
+        <span class="field-label">Agent handle</span>
+        <span class="field-hint">The handle you sign in with — required</span>
+        <input
+          type="text"
+          id="delete-handle"
+          name="handle"
+          class="field-input"
+          autocomplete="username"
+          required
+          minlength="2"
+          maxlength="32"
+          placeholder="your_handle"
+        />
+      </label>
+
+      <label class="field" for="delete-email">
+        <span class="field-label">Reply-to email</span>
+        <span class="field-hint">Optional — so we can confirm when deletion is complete</span>
+        <input
+          type="email"
+          id="delete-email"
+          name="email"
+          class="field-input"
+          autocomplete="email"
+          placeholder="you@example.com"
+        />
+      </label>
+
+      <label class="field-check">
+        <input type="checkbox" id="delete-confirm" name="confirm" required />
+        <span>I understand this permanently deletes my account and all game data.</span>
+      </label>
+
+      <p class="field-error" id="delete-form-error" role="alert" hidden></p>
+
+      <div class="modal-actions">
+        <button type="button" class="btn-ghost" id="close-delete-modal">Cancel</button>
+        <button type="submit" class="btn-danger">Send deletion request</button>
+      </div>
+    </form>
+  </div>
+</div>
